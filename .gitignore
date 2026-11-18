@@ -221,3 +221,27 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---------------------------------------------------------------------------
+# Project-specific rules
+# ---------------------------------------------------------------------------
+
+# Real assessment inputs (scanned PDF, template image, client CSV) are supplied separately.
+# They are confidential and are not versioned by default; the folders are kept via .gitkeep.
+# Use 'git add -f' deliberately if an input should be committed.
+task_1_field_digitization/data/input/*
+!task_1_field_digitization/data/input/.gitkeep
+task_1_field_digitization/data/template/*
+!task_1_field_digitization/data/template/.gitkeep
+
+# Intermediate debug artefacts. Final output files in data/output/ are NOT ignored.
+task_1_field_digitization/data/output/debug/
+
+# Editor settings, credentials and OS files not covered by the template above
+.vscode/
+*.key
+*.pem
+secrets/
+*.tmp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+PyMuPDF>=1.24,<2
+opencv-python-headless>=4.9
+numpy>=1.26
+pydantic>=2.6
+PyYAML>=6.0
+pytest>=8.0
+
+# Optional local OCR adapter (printed text only; needs the Tesseract binary installed):
+# pytesseract>=0.3.10

@@ -1,0 +1,50 @@
+# Tunable thresholds.
+#
+# IMPORTANT: every value below was chosen on SYNTHETIC test images only. No threshold has
+# been validated on real scanned forms, and none supports any claim about real-world
+# accuracy. They must be re-tuned on the real scanned PDF once it is available.
+#
+# This file lists the configurable settings only. Other constants are fixed in the code
+# (blur kernel size, percentile choices, filter kernels, what counts as "uniform white" or a
+# "zero-filled" row); they are documented in quality.py and ingest.py.
+
+ingest:
+  render_dpi: 200            # resolution used to rasterise each PDF page
+  max_pixels: 40000000       # refuse to render pages larger than this (memory guard)
+  # A run of full-width, pure-black rows (every pixel <= 2) covering at least this share of
+  # the page height is treated as zero-filled data from a truncated or damaged image stream.
+  # Real scans carry sensor noise, so exact-black full rows do not occur naturally.
+  min_zero_band_ratio: 0.02
+
+quality:
+  # Pixels darker than this fraction of the local background count as "ink".
+  ink_relative_threshold: 0.6
+  # Pixels darker than this fraction count as a (possibly faint) "mark". Must be above
+  # ink_relative_threshold. Faded or blurred writing still registers as marks.
+  mark_relative_threshold: 0.93
+  # A group of marked pixels is page content (a stroke, a ruled line, a letter) when its
+  # longest side is at least this fraction of the page's longer side. Smaller groups are
+  # treated as dust/speckle. A page with no content is a candidate for "blank".
+  min_content_extent_ratio: 0.006
+  # A page with no content is only called blank when its median grey level is at least
+  # this. A uniformly grey or dark scan is "unreadable", not "blank".
+  min_blank_paper_level: 170
+  # Above this ink fraction the page is mostly dark: mud, heavy stains, black scan.
+  max_ink_ratio: 0.45
+  # Mean grey level (0-255). Below this the scan is too dark to trust.
+  min_mean_brightness: 90
+  # Paper level minus the 10th percentile grey of content pixels. Below this: low contrast.
+  min_contrast: 40
+  # Variance of the Laplacian around content, on a width-normalised copy. Below this the
+  # page is out of focus.
+  min_sharpness: 40
+  # Width used to normalise the image before measuring sharpness.
+  sharpness_reference_width: 1000
+  # Gaussian-noise standard deviation (grey levels) above which the page is too noisy.
+  max_noise_sigma: 15.0
+  # Salt-and-pepper detection: a pixel counts as a speckle when it differs from its 3x3
+  # median by at least this many grey levels AND none of its 8 neighbours does (isolated
+  # impulse; connected deviations such as thin lines are not counted). The page is too
+  # noisy when the share of speckle pixels exceeds max_speckle_ratio.
+  speckle_min_difference: 60
+  max_speckle_ratio: 0.005

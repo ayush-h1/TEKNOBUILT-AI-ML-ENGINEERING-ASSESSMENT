@@ -1,0 +1,28 @@
+# Form layout configuration.
+#
+# PLACEHOLDER: the real template.jpg has not been supplied. The regions below are
+# illustrative and match only the synthetic test template. Replace them with regions
+# measured on the real template before processing real forms.
+#
+# Coordinates are fractions of page width/height: [x0, y0, x1, y1], origin top-left.
+
+form_name: placeholder_safety_observation_form
+fields:
+  - name: date
+    kind: text
+    bbox: [0.60, 0.08, 0.95, 0.12]
+  - name: observer
+    kind: text
+    bbox: [0.10, 0.08, 0.55, 0.12]
+  - name: safety_comments
+    kind: text
+    bbox: [0.08, 0.55, 0.92, 0.85]
+  - name: ppe_worn
+    kind: checkbox
+    bbox: [0.10, 0.20, 0.14, 0.22]
+  - name: area_clean
+    kind: checkbox
+    bbox: [0.10, 0.26, 0.14, 0.28]
+  - name: hazard_observed
+    kind: checkbox
+    bbox: [0.10, 0.32, 0.14, 0.34]
