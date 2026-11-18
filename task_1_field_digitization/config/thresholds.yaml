@@ -48,3 +48,55 @@ quality:
   # noisy when the share of speckle pixels exceeds max_speckle_ratio.
   speckle_min_difference: 60
   max_speckle_ratio: 0.005
+
+# Registration of each page to template.png. All values below are starting values chosen from one
+# supplied sample and from labelled synthetic cases. None is validated on real scans.
+alignment:
+  # SIFT with an affine fit is the primary method. Homography is tried only when the affine fit
+  # fails verification and the homography is clearly better. ORB is an opt-in alternative: add
+  # "orb" to this list to enable it; it is never added automatically and must pass stricter
+  # verification (orb_strictness). Neither detector can force an alignment to be accepted.
+  detectors: [sift]
+  max_features: 4000
+  ratio_test: 0.75
+  ransac_threshold_px: 4.0         # in template pixels
+  ransac_max_iters: 5000
+  ransac_confidence: 0.999
+  rng_seed: 0                      # OpenCV's affine RANSAC was repeatable without it; kept as a guard
+  # Gates. All must pass, otherwise the page is not aligned and nothing is extracted from it.
+  min_matches: 12
+  min_inliers: 12
+  min_inlier_spread: 0.35          # inliers must cover this share of the template width and height
+  max_median_residual_px: 2.5
+  min_scale: 0.2
+  max_scale: 5.0
+  max_shear_degrees: 30.0          # loose on purpose: rotating an anisotropically stretched page shears it
+  max_perspective: 0.25
+  # Independent check: the warped page's lines must agree with the template's own lines.
+  verification_max_mean_px: 1.5
+  verification_min_within_2px: 0.90
+  orb_strictness: 0.5
+  allow_homography: true
+  homography_min_improvement_px: 0.25
+
+# Reading cells in the aligned template frame. Starting values from the supplied sample (marked
+# boxes held 82-112 dark pixels, about 1.1-1.5% of a cell; every empty box held 0) and synthetic cases.
+extraction:
+  dark_ratio: 0.55                     # ink = darker than this share of the paper level
+  line_tolerance_px: 2                 # ink within this distance of a ruled line belongs to the line
+  checkbox_empty_max_fraction: 0.002   # at most this share of the box inked -> unchecked
+  checkbox_checked_min_fraction: 0.005 # at least this -> checked; anything in between -> uncertain
+  checkbox_checked_max_fraction: 0.08  # more than this (scribble, filled box) -> uncertain
+  min_text_ink_px: 25                  # fewer dark pixels in a text cell -> empty
+  row_rule_min_coverage: 0.8           # a checklist row exists only where its grid lines are drawn
+  orphan_ink_min_px: 50                # ink in a slot without a grid -> page review
+
+# Text recognition. Handwritten text is always a candidate that needs human confirmation,
+# whatever the engine's confidence; only printed text can be accepted automatically.
+ocr:
+  tesseract_cmd: null              # null = auto-locate (config, TESSERACT_CMD, PATH, default install path)
+  language: eng
+  upscale: 2.0
+  printed_min_confidence: 0.80
+  printed_provider: auto           # auto | tesseract | none
+  handwritten_provider: auto

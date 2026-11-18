@@ -1,10 +1,12 @@
+from pathlib import Path
+
 import pytest
 
 from field_digitization.config import (
     ConfigError,
-    FieldKind,
     FormLayout,
     load_layout,
+    load_semantics,
     load_thresholds,
 )
 
@@ -25,10 +27,77 @@ def test_removed_blank_ratio_setting_is_rejected(tmp_path):
         load_thresholds(path)
 
 
-def test_default_layout_loads_and_has_both_kinds():
-    layout = load_layout()
-    kinds = {f.kind for f in layout.fields}
-    assert kinds == {FieldKind.TEXT, FieldKind.CHECKBOX}
+def test_default_semantics_load_and_have_both_text_and_choice_fields():
+    # Replaces the test of the placeholder fixed-fraction layout file (approved): the form definition
+    # now lives in coordinate-free form_semantics.yaml.
+    sem = load_semantics()
+    text_kinds = {f.kind for f in sem.header_text_fields} | {sem.section_title.kind, sem.comments.kind}
+    assert text_kinds == {"printed", "handwritten"}
+    assert sem.checklist.options == ["S", "R", "I", "N"]
+    assert sem.expectation.options == ["Yes", "No", "N/A"] and len(sem.expectation.question_keys) == 4
+    assert len(sem.location.options) == 10 and sem.shift.options == ["Day", "Night"]
+
+
+def test_default_semantics_contain_no_coordinates_and_no_row_count():
+    text = (Path(__file__).resolve().parents[1] / "config" / "form_semantics.yaml").read_text(encoding="utf-8")
+    for forbidden in ("bbox", "x0", "y0", "row_count", "rows:", "slots"):
+        assert forbidden not in text
+
+
+def test_policy_decisions_required_and_optional():
+    sem = load_semantics()
+    assert sem.checklist.required and sem.expectation.required and sem.location.required and sem.shift.required
+    assert all(f.required for f in sem.header_text_fields)
+    assert sem.comments.required is False
+
+
+def test_semantics_reject_duplicate_options_keys_and_unknown_fields(tmp_path):
+    base = (Path(__file__).resolve().parents[1] / "config" / "form_semantics.yaml").read_text(encoding="utf-8")
+    cases = {
+        "dup_option": base.replace('options: ["S", "R", "I", "N"]', 'options: ["S", "S", "I", "N"]'),
+        "dup_key": base.replace("key: shift", "key: location"),
+        "unknown": base + "\nsurprise: 1\n",
+        "one_option": base.replace('options: ["Day", "Night"]', 'options: ["Day"]'),
+    }
+    for name, text in cases.items():
+        path = tmp_path / f"{name}.yaml"
+        path.write_text(text, encoding="utf-8")
+        with pytest.raises(ConfigError):
+            load_semantics(path)
+
+
+def test_missing_semantics_file_raises(tmp_path):
+    with pytest.raises(ConfigError, match="not found"):
+        load_semantics(tmp_path / "nope.yaml")
+
+
+def test_the_placeholder_layout_file_is_gone_and_load_layout_needs_a_path():
+    assert not (Path(__file__).resolve().parents[1] / "config" / "form_layout.yaml").exists()
+    with pytest.raises(TypeError):
+        load_layout()  # there is no default layout file any more
+
+
+def test_alignment_and_ocr_defaults_load_and_orb_is_not_enabled_by_default():
+    th = load_thresholds()
+    assert th.alignment.detectors == ["sift"]
+    assert th.alignment.allow_homography is True
+    assert th.ocr.printed_min_confidence == pytest.approx(0.80)
+    assert th.ocr.tesseract_cmd is None
+
+
+@pytest.mark.parametrize("bad", ["detectors: []", "detectors: [sift, sift]", "detectors: [akaze]", "min_scale: 6.0",
+                                 "min_inliers: 2", "ratio_test: 1.2", "max_shear_degrees: 120"])
+def test_invalid_alignment_settings_raise(tmp_path, bad):
+    path = tmp_path / "t.yaml"
+    path.write_text(f"alignment:\n  {bad}\n", encoding="utf-8")
+    with pytest.raises(ConfigError):
+        load_thresholds(path)
+
+
+def test_orb_must_be_explicitly_listed(tmp_path):
+    path = tmp_path / "t.yaml"
+    path.write_text("alignment:\n  detectors: [sift, orb]\n", encoding="utf-8")
+    assert load_thresholds(path).alignment.detectors == ["sift", "orb"]
 
 
 def test_missing_config_file_raises(tmp_path):

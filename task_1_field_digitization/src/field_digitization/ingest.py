@@ -87,6 +87,38 @@ class IngestError(Exception):
 
 
 @dataclass(frozen=True)
+class TextWord:
+    text: str
+    bbox: tuple[float, float, float, float]  # PDF points, origin top-left
+
+
+@dataclass(frozen=True)
+class TextLine:
+    text: str
+    direction: tuple[float, float]  # MuPDF line direction (cos, sin); (1, 0) is horizontal left to right
+
+
+@dataclass(frozen=True)
+class TextLayer:
+    """The text a PDF page carries itself. A scanned form has an empty layer; a vector page has text.
+
+    An empty layer means "this page has no text of its own". `None` on `IngestedPage.text_layer`
+    means the layer could not be read, which is a different statement.
+    """
+
+    words: tuple[TextWord, ...] = ()
+    lines: tuple[TextLine, ...] = ()
+
+    @property
+    def is_empty(self) -> bool:
+        return not self.words
+
+    @property
+    def text(self) -> str:
+        return " ".join(w.text for w in self.words)
+
+
+@dataclass(frozen=True)
 class IngestedPage:
     """One rendered page, or the reason it could not be rendered."""
 
@@ -102,6 +134,8 @@ class IngestedPage:
     # document-level uncertainty: never evidence of damage to this page by themselves.
     load_warnings: tuple[str, ...] = ()
     damage: Optional[str] = None         # set when data loss is suspected, with the evidence
+    # The page's own text (schema 2.0). Read separately from rendering and never changes `warnings`.
+    text_layer: Optional[TextLayer] = None
 
     @property
     def ok(self) -> bool:
@@ -166,6 +200,26 @@ def _render_page(doc: pymupdf.Document, index: int, config: IngestConfig) -> np.
     )
     image = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.height, pix.width)
     return image.copy()  # detach from the pixmap buffer
+
+
+def _read_text_layer(doc: pymupdf.Document, index: int) -> Optional[TextLayer]:
+    """Read the page's words and line directions. Returns None (and logs) if that fails; it never raises."""
+    try:
+        page = doc.load_page(index)
+        words = tuple(
+            TextWord(str(w[4]), (float(w[0]), float(w[1]), float(w[2]), float(w[3])))
+            for w in page.get_text("words")
+        )
+        lines: list[TextLine] = []
+        for block in page.get_text("dict").get("blocks", []):
+            for line in block.get("lines", []):
+                text = "".join(span.get("text", "") for span in line.get("spans", []))
+                if text.strip():
+                    lines.append(TextLine(text, (float(line["dir"][0]), float(line["dir"][1]))))
+        return TextLayer(words=words, lines=tuple(lines))
+    except Exception as exc:  # the text layer is evidence only; its failure must not fail the page
+        logger.warning("text layer of page %d could not be read: %s", index + 1, exc)
+        return None
 
 
 def _page_references_content(doc: pymupdf.Document, index: int) -> bool:
@@ -277,11 +331,14 @@ def iter_pages(
                         "page %d: %d document-structure (page tree) warning(s) while loading",
                         page_number, len(load_warnings),
                     )
+                # Read after the render warnings were drained, so it cannot change them.
+                text_layer = _read_text_layer(doc, index)
                 page = IngestedPage(
                     page_number=page_number,
                     image=image,
                     warnings=warnings,
                     load_warnings=load_warnings,
                     damage=damage,
+                    text_layer=text_layer,
                 )
         yield page  # MuPDF global state is back to normal here, whatever the consumer does

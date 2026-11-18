@@ -234,6 +234,10 @@ task_1_field_digitization/data/input/*
 task_1_field_digitization/data/template/*
 !task_1_field_digitization/data/template/.gitkeep
 
+# Hand-transcribed ground truth for the supplied sample. It repeats names and numbers from the sample,
+# so it stays out of Git. Tests that need it skip when it is absent.
+task_1_field_digitization/data/ground_truth/
+
 # Intermediate debug artefacts. Final output files in data/output/ are NOT ignored.
 task_1_field_digitization/data/output/debug/
 

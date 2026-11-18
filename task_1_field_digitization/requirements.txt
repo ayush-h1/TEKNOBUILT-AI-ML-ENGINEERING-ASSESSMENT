@@ -5,5 +5,7 @@ pydantic>=2.6
 PyYAML>=6.0
 pytest>=8.0
 
-# Optional local OCR adapter (printed text only; needs the Tesseract binary installed):
-# pytesseract>=0.3.10
+# Python wrapper for the Tesseract OCR engine, used for printed text and form labels.
+# The Tesseract binary itself must be installed separately (see the Task 1 README); without
+# it the pipeline falls back to a null OCR provider and reports text as unavailable.
+pytesseract>=0.3.10

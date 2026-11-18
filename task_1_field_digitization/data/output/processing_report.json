@@ -1,0 +1,32 @@
+{
+  "source_file": "Sample_input.pdf",
+  "total_pages": 4,
+  "page_status": {
+    "failed_test_form": 1,
+    "needs_review": 3
+  },
+  "processing_completed": 4,
+  "review_required": 3,
+  "fully_automatic_extraction": 0,
+  "failed_test_form_pages": [
+    4
+  ],
+  "failed_test_form_from_ocr_only": [],
+  "checklist_rows_per_form_page": {
+    "1": 8,
+    "2": 8,
+    "3": 9
+  },
+  "text_fields": {
+    "extracted": 40,
+    "needs_review": 18
+  },
+  "choice_groups": {
+    "answered": 43
+  },
+  "checkboxes": {
+    "checked": 43,
+    "unchecked": 129
+  },
+  "errors": {}
+}

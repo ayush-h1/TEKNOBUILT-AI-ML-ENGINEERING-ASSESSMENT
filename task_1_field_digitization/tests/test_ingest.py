@@ -384,3 +384,58 @@ def test_oversized_page_is_rejected_not_rendered(tmp_path):
     doc.close()
     assert not pages[0].ok
     assert "above the limit" in pages[0].error
+
+
+# --- text layer (schema 2.0 evidence for failed-form detection) --------------------------------
+
+def _text_pdf(path, text="FAILED TEST FORM", degrees=45):
+    doc = pymupdf.open()
+    page = doc.new_page(width=612, height=792)
+    origin = pymupdf.Point(100, 600)
+    page.insert_text(origin, text, fontsize=40, fontname="helv", morph=(origin, pymupdf.Matrix(degrees)))
+    doc.save(path)
+    doc.close()
+    return path
+
+
+def test_text_layer_of_a_vector_page_has_words_and_line_direction(tmp_path):
+    page = _pages_for(_text_pdf(tmp_path / "t.pdf"))[0]
+    layer = page.text_layer
+    assert layer is not None and not layer.is_empty
+    assert [w.text for w in layer.words] == ["FAILED", "TEST", "FORM"]
+    assert layer.text == "FAILED TEST FORM"
+    cos, sin = layer.lines[0].direction
+    assert np.degrees(np.arctan2(-sin, cos)) == pytest.approx(45.0, abs=1.0)
+    assert page.ok  # the page is still rendered normally
+
+
+def test_horizontal_text_has_a_zero_degree_direction(tmp_path):
+    layer = _pages_for(_text_pdf(tmp_path / "h.pdf", degrees=0))[0].text_layer
+    cos, sin = layer.lines[0].direction
+    assert (cos, sin) == pytest.approx((1.0, 0.0), abs=1e-6)
+
+
+def test_image_only_page_has_an_empty_text_layer_not_a_missing_one(tmp_path):
+    pdf = synthetic.write_pdf([synthetic.make_small_form_page()], tmp_path / "scan.pdf")
+    layer = _pages_for(pdf)[0].text_layer
+    assert layer is not None and layer.is_empty and layer.text == ""
+
+
+def test_text_layer_failure_is_isolated_and_leaves_the_page_intact(tmp_path, monkeypatch):
+    pdf = _text_pdf(tmp_path / "t.pdf")
+
+    def boom(self, *args, **kwargs):
+        raise RuntimeError("text extraction failed")
+
+    monkeypatch.setattr(pymupdf.Page, "get_text", boom)
+    page = _pages_for(pdf)[0]
+    assert page.ok and page.text_layer is None  # unreadable, which differs from empty
+    assert page.warnings == () and page.damage is None
+
+
+def test_reading_the_text_layer_does_not_change_render_warnings(tmp_path):
+    pdf = synthetic.write_pdf([synthetic.make_small_form_page(i) for i in (1, 2, 3)], tmp_path / "a.pdf")
+    pdf.write_bytes(synthetic.truncate_bytes(pdf.read_bytes(), 0.7))
+    pages = _pages_for(pdf)
+    assert [bool(p.damage) for p in pages] == [False, False, True]  # same result as before text layers existed
+    assert all(p.text_layer is not None for p in pages)

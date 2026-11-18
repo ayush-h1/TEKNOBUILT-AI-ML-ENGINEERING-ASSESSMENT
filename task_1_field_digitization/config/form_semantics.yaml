@@ -1,0 +1,51 @@
+# What the form contains: names, kinds, required flags and choice options.
+#
+# This file holds NO coordinates. Geometry comes from two places at run time: the template
+# (template.png is analysed once per run) and each page (rows and blocks are detected per page).
+# The number of checklist rows is not configured here because it varies from form to form.
+#
+# `kind` decides how far OCR may be trusted: handwritten text is always an OCR candidate that needs
+# human confirmation; printed text may be accepted when the engine's confidence is high enough.
+
+form_name: PACE safety observation form
+
+section_title:
+  key: section_title
+  kind: printed
+  required: true
+
+header_text_fields:
+  - {key: observation_date,  kind: handwritten, required: true}
+  - {key: observer,          kind: handwritten, required: true}
+  - {key: company_observed,  kind: handwritten, required: true}
+  - {key: timesheet_number,  kind: handwritten, required: true}
+  - {key: employee_number,   kind: handwritten, required: true}
+
+# CWA location: one box per code, in reading order (top band left to right, then bottom band).
+location:
+  key: location
+  required: true
+  options: ["1000", "2000", "3000", "4000", "8000", "5000", "5900", "6000", "7000", "OSLD"]
+
+shift:
+  key: shift
+  required: true
+  options: ["Day", "Night"]
+
+# Checklist: S = Safe, R = At Risk, I = Imminent Hazard, N = N/A. Every detected row is required.
+checklist:
+  key: checklist
+  required: true
+  options: ["S", "R", "I", "N"]
+
+# CCZJV expectation questions, in the order they appear. The question wording is read from the page.
+expectation:
+  key: expectation
+  required: true
+  options: ["Yes", "No", "N/A"]
+  question_keys: [positive_feedback, job_stopped, investigation, corrective_actions]
+
+comments:
+  key: comments
+  kind: handwritten
+  required: false

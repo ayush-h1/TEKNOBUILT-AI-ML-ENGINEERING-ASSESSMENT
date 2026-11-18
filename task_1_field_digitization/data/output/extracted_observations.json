@@ -1,0 +1,3171 @@
+{
+  "schema_version": "2.0",
+  "source_file": "Sample_input.pdf",
+  "page_count": 4,
+  "pages": [
+    {
+      "page_number": 1,
+      "status": "needs_review",
+      "quality": {
+        "verdict": "ok",
+        "reasons": [],
+        "metrics": {
+          "mark_ratio": 0.07676003294124702,
+          "ink_ratio": 0.04163511003420782,
+          "content_components": 697,
+          "mean_brightness": 241.84332022128328,
+          "paper_level": 255.0,
+          "contrast": 254.0,
+          "sharpness": 9493.222921802955,
+          "noise_sigma": 0.0,
+          "speckle_ratio": 0.0005792634539817707
+        }
+      },
+      "text_fields": [],
+      "checkboxes": [],
+      "error": null,
+      "review_required": true,
+      "review_reasons": [
+        "observation_date: needs_review",
+        "observer: needs_review",
+        "company_observed: needs_review",
+        "timesheet_number: needs_review",
+        "employee_number: needs_review",
+        "comments: needs_review"
+      ],
+      "form": {
+        "section_title": {
+          "name": "section_title",
+          "value": "Breaking Containment - Life Saving Action",
+          "status": "extracted",
+          "confidence": 0.9316666666666668,
+          "review_reason": null,
+          "text_kind": "printed",
+          "engine": {
+            "name": "tesseract",
+            "version": "5.4.0.20240606"
+          }
+        },
+        "header": {
+          "observation_date": {
+            "name": "observation_date",
+            "value": "2024-10-02",
+            "status": "needs_review",
+            "confidence": 0.76,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "observer": {
+            "name": "observer",
+            "value": "Job n Da ure",
+            "status": "needs_review",
+            "confidence": 0.865,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "company_observed": {
+            "name": "company_observed",
+            "value": "Summit Construction",
+            "status": "needs_review",
+            "confidence": 0.63,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "timesheet_number": {
+            "name": "timesheet_number",
+            "value": "25489",
+            "status": "needs_review",
+            "confidence": 0.45,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "employee_number": {
+            "name": "employee_number",
+            "value": "7852",
+            "status": "needs_review",
+            "confidence": 0.82,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "location": {
+            "key": "location",
+            "options": [
+              {
+                "name": "1000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "2000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "3000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "4000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "8000",
+                "state": "checked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 100,
+                "mark_area_fraction": 0.01495
+              },
+              {
+                "name": "5000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "5900",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "6000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "7000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "OSLD",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              }
+            ],
+            "required": true,
+            "status": "answered",
+            "selected": "8000",
+            "confidence": null,
+            "review_required": false,
+            "review_reasons": []
+          },
+          "shift": {
+            "key": "shift",
+            "options": [
+              {
+                "name": "Day",
+                "state": "checked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 104,
+                "mark_area_fraction": 0.01429
+              },
+              {
+                "name": "Night",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              }
+            ],
+            "required": true,
+            "status": "answered",
+            "selected": "Day",
+            "confidence": null,
+            "review_required": false,
+            "review_reasons": []
+          }
+        },
+        "checklist": [
+          {
+            "row_number": 1,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_1_question",
+              "value": "Has the location to be cut or opened been visibly marked?",
+              "status": "extracted",
+              "confidence": 0.9545454545454546,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_1",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 106,
+                  "mark_area_fraction": 0.01452
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 2,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_2_question",
+              "value": "Work has been authorized to begin (e.g. Line Break Permit)",
+              "status": "extracted",
+              "confidence": 0.875,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_2",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 104,
+                  "mark_area_fraction": 0.01359
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 3,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_3_question",
+              "value": "Nearby work activities has no potential ignition sources or conflict with work scope (e.g. hot work)",
+              "status": "extracted",
+              "confidence": 0.95625,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_3",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 103,
+                  "mark_area_fraction": 0.01378
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 4,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_4_question",
+              "value": "Exclusion zone (e.g. barricade) is in place.",
+              "status": "extracted",
+              "confidence": 0.94,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_4",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 104,
+                  "mark_area_fraction": 0.01425
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "R",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 5,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_5_question",
+              "value": "There is clear means of communication with the equipment operator",
+              "status": "extracted",
+              "confidence": 0.948,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_5",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 105,
+                  "mark_area_fraction": 0.01357
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "S",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 6,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_6_question",
+              "value": "Workers positioned outside line of fire",
+              "status": "extracted",
+              "confidence": 0.9516666666666667,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_6",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 108,
+                  "mark_area_fraction": 0.01411
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 7,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_7_question",
+              "value": "Spill containment plan in place",
+              "status": "extracted",
+              "confidence": 0.9540000000000001,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_7",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 107,
+                  "mark_area_fraction": 0.01414
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 8,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_8_question",
+              "value": "Energy sources isolated and secured",
+              "status": "extracted",
+              "confidence": 0.96,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_8",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 104,
+                  "mark_area_fraction": 0.01359
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          }
+        ],
+        "expectation_answers": [
+          {
+            "key": "positive_feedback",
+            "question": {
+              "name": "expectation_positive_feedback_question",
+              "value": "Has positive feedback provided?",
+              "status": "extracted",
+              "confidence": 0.96,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_positive_feedback",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 101,
+                  "mark_area_fraction": 0.01419
+                },
+                {
+                  "name": "No",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "Yes",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "job_stopped",
+            "question": {
+              "name": "expectation_job_stopped_question",
+              "value": "Has the job been stopped in the event of an imminent hazard?",
+              "status": "extracted",
+              "confidence": 0.9533333333333333,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_job_stopped",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "No",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 106,
+                  "mark_area_fraction": 0.01353
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "No",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "investigation",
+            "question": {
+              "name": "expectation_investigation_question",
+              "value": "Has an investigation been conducted?",
+              "status": "extracted",
+              "confidence": 0.9520000000000001,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_investigation",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "No",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N/A",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 105,
+                  "mark_area_fraction": 0.01454
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N/A",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "corrective_actions",
+            "question": {
+              "name": "expectation_corrective_actions_question",
+              "value": "Have corrective actions been taken?",
+              "status": "extracted",
+              "confidence": 0.96,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_corrective_actions",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "No",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N/A",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 108,
+                  "mark_area_fraction": 0.01411
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N/A",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          }
+        ],
+        "comments": {
+          "name": "comments",
+          "value": "Cafety measures were strictly Followed.",
+          "status": "needs_review",
+          "confidence": 0.884,
+          "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+          "text_kind": "handwritten",
+          "engine": {
+            "name": "tesseract",
+            "version": "5.4.0.20240606"
+          }
+        }
+      },
+      "alignment": {
+        "accepted": true,
+        "method": "sift_affine",
+        "reasons": [],
+        "keypoints_template": 2603,
+        "keypoints_page": 4000,
+        "matches": 269,
+        "inliers": 65,
+        "inlier_ratio": 0.2416,
+        "inlier_spread_x": 0.9742,
+        "inlier_spread_y": 0.9318,
+        "median_residual_px": 0.9502,
+        "scale_x": 0.72555,
+        "scale_y": 1.0907,
+        "rotation_degrees": -0.0235,
+        "shear_degrees": 0.0276,
+        "perspective_magnitude": 0.0,
+        "verification_chamfer_mean_px": 0.4597,
+        "verification_within_2px_fraction": 0.9946,
+        "matrix": [
+          [
+            0.725553,
+            -0.000079,
+            -0.084157
+          ],
+          [
+            -0.000298,
+            1.090704,
+            -0.148489
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "opencv_version": "5.1.0"
+      },
+      "failed_form_evidence": null
+    },
+    {
+      "page_number": 2,
+      "status": "needs_review",
+      "quality": {
+        "verdict": "ok",
+        "reasons": [],
+        "metrics": {
+          "mark_ratio": 0.07736772967498694,
+          "ink_ratio": 0.04187369109981477,
+          "content_components": 729,
+          "mean_brightness": 241.77004921025272,
+          "paper_level": 255.0,
+          "contrast": 254.0,
+          "sharpness": 9562.323243392926,
+          "noise_sigma": 0.0,
+          "speckle_ratio": 0.0006007176559810955
+        }
+      },
+      "text_fields": [],
+      "checkboxes": [],
+      "error": null,
+      "review_required": true,
+      "review_reasons": [
+        "observation_date: needs_review",
+        "observer: needs_review",
+        "company_observed: needs_review",
+        "timesheet_number: needs_review",
+        "employee_number: needs_review",
+        "comments: needs_review"
+      ],
+      "form": {
+        "section_title": {
+          "name": "section_title",
+          "value": "O&I Confined Space - Life Saving Action",
+          "status": "extracted",
+          "confidence": 0.8757142857142857,
+          "review_reason": null,
+          "text_kind": "printed",
+          "engine": {
+            "name": "tesseract",
+            "version": "5.4.0.20240606"
+          }
+        },
+        "header": {
+          "observation_date": {
+            "name": "observation_date",
+            "value": "2024-70-07",
+            "status": "needs_review",
+            "confidence": 0.85,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "observer": {
+            "name": "observer",
+            "value": "luie Gomez",
+            "status": "needs_review",
+            "confidence": 0.72,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "company_observed": {
+            "name": "company_observed",
+            "value": "Hernandez Builders",
+            "status": "needs_review",
+            "confidence": 0.945,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "timesheet_number": {
+            "name": "timesheet_number",
+            "value": "36787",
+            "status": "needs_review",
+            "confidence": 0.89,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "employee_number": {
+            "name": "employee_number",
+            "value": "14589",
+            "status": "needs_review",
+            "confidence": 0.69,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "location": {
+            "key": "location",
+            "options": [
+              {
+                "name": "1000",
+                "state": "checked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 100,
+                "mark_area_fraction": 0.01446
+              },
+              {
+                "name": "2000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "3000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "4000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "8000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "5000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "5900",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "6000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "7000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "OSLD",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              }
+            ],
+            "required": true,
+            "status": "answered",
+            "selected": "1000",
+            "confidence": null,
+            "review_required": false,
+            "review_reasons": []
+          },
+          "shift": {
+            "key": "shift",
+            "options": [
+              {
+                "name": "Day",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "Night",
+                "state": "checked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 109,
+                "mark_area_fraction": 0.01481
+              }
+            ],
+            "required": true,
+            "status": "answered",
+            "selected": "Night",
+            "confidence": null,
+            "review_required": false,
+            "review_reasons": []
+          }
+        },
+        "checklist": [
+          {
+            "row_number": 1,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_1_question",
+              "value": "Proof of Training for CSE Duties (e.g. HH Stickers)",
+              "status": "extracted",
+              "confidence": 0.9488888888888889,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_1",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 109,
+                  "mark_area_fraction": 0.01494
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 2,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_2_question",
+              "value": "Does the crew have avalid confined space permit?",
+              "status": "extracted",
+              "confidence": 0.87125,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_2",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 107,
+                  "mark_area_fraction": 0.01447
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 3,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_3_question",
+              "value": "Reliable communication is available for an Emergency (e.g. Hole Watch)",
+              "status": "extracted",
+              "confidence": 0.937,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_3",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 108,
+                  "mark_area_fraction": 0.01495
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 4,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_4_question",
+              "value": "CSE Attendant monitoring entrant status and can communi- cate with entrants",
+              "status": "extracted",
+              "confidence": 0.9445454545454546,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_4",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 109,
+                  "mark_area_fraction": 0.01546
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 5,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_5_question",
+              "value": "Access/egress entry ways clear of obstructions?",
+              "status": "extracted",
+              "confidence": 0.9366666666666668,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_5",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 108,
+                  "mark_area_fraction": 0.0146
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 6,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_6_question",
+              "value": "Controls to prevent unauthorized access (e.g. Barricades, attendant, signs) are in place?",
+              "status": "extracted",
+              "confidence": 0.9383333333333332,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_6",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 110,
+                  "mark_area_fraction": 0.01437
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 7,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_7_question",
+              "value": "Fire extinguisher located near entry point?",
+              "status": "extracted",
+              "confidence": 0.96,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_7",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 111,
+                  "mark_area_fraction": 0.01467
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 8,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_8_question",
+              "value": "Does the crew maintain an access/egress record?",
+              "status": "extracted",
+              "confidence": 0.9385714285714286,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_8",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 111,
+                  "mark_area_fraction": 0.0145
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          }
+        ],
+        "expectation_answers": [
+          {
+            "key": "positive_feedback",
+            "question": {
+              "name": "expectation_positive_feedback_question",
+              "value": "Has positive feedback provided?",
+              "status": "extracted",
+              "confidence": 0.96,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_positive_feedback",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "No",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N/A",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 113,
+                  "mark_area_fraction": 0.01624
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N/A",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "job_stopped",
+            "question": {
+              "name": "expectation_job_stopped_question",
+              "value": "Has the job been stopped in the event of an imminent hazard?",
+              "status": "extracted",
+              "confidence": 0.9541666666666667,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_job_stopped",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "No",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 109,
+                  "mark_area_fraction": 0.01392
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "No",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "investigation",
+            "question": {
+              "name": "expectation_investigation_question",
+              "value": "Has an investigation been conducted?",
+              "status": "extracted",
+              "confidence": 0.9520000000000001,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_investigation",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 107,
+                  "mark_area_fraction": 0.01448
+                },
+                {
+                  "name": "No",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "Yes",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "corrective_actions",
+            "question": {
+              "name": "expectation_corrective_actions_question",
+              "value": "Have corrective actions been taken?",
+              "status": "extracted",
+              "confidence": 0.958,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_corrective_actions",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 111,
+                  "mark_area_fraction": 0.01417
+                },
+                {
+                  "name": "No",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "Yes",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          }
+        ],
+        "comments": {
+          "name": "comments",
+          "value": "Improvements needed in communication.",
+          "status": "needs_review",
+          "confidence": 0.9025,
+          "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+          "text_kind": "handwritten",
+          "engine": {
+            "name": "tesseract",
+            "version": "5.4.0.20240606"
+          }
+        }
+      },
+      "alignment": {
+        "accepted": true,
+        "method": "sift_affine",
+        "reasons": [],
+        "keypoints_template": 2603,
+        "keypoints_page": 4000,
+        "matches": 270,
+        "inliers": 61,
+        "inlier_ratio": 0.2259,
+        "inlier_spread_x": 0.9742,
+        "inlier_spread_y": 0.9318,
+        "median_residual_px": 0.7618,
+        "scale_x": 0.72526,
+        "scale_y": 1.09061,
+        "rotation_degrees": -0.0089,
+        "shear_degrees": 0.0053,
+        "perspective_magnitude": 0.0,
+        "verification_chamfer_mean_px": 0.434,
+        "verification_within_2px_fraction": 0.9971,
+        "matrix": [
+          [
+            0.725258,
+            0.000068,
+            -0.141178
+          ],
+          [
+            -0.000112,
+            1.09061,
+            -0.091894
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "opencv_version": "5.1.0"
+      },
+      "failed_form_evidence": null
+    },
+    {
+      "page_number": 3,
+      "status": "needs_review",
+      "quality": {
+        "verdict": "ok",
+        "reasons": [],
+        "metrics": {
+          "mark_ratio": 0.08354137016356374,
+          "ink_ratio": 0.0450760538536658,
+          "content_components": 881,
+          "mean_brightness": 240.84157571032796,
+          "paper_level": 255.0,
+          "contrast": 254.0,
+          "sharpness": 9727.973339738133,
+          "noise_sigma": 0.0,
+          "speckle_ratio": 0.0007066962441705315
+        }
+      },
+      "text_fields": [],
+      "checkboxes": [],
+      "error": null,
+      "review_required": true,
+      "review_reasons": [
+        "observation_date: needs_review",
+        "observer: needs_review",
+        "company_observed: needs_review",
+        "timesheet_number: needs_review",
+        "employee_number: needs_review",
+        "comments: needs_review"
+      ],
+      "form": {
+        "section_title": {
+          "name": "section_title",
+          "value": "Critical Devices — Life Saving Action",
+          "status": "extracted",
+          "confidence": 0.9,
+          "review_reason": null,
+          "text_kind": "printed",
+          "engine": {
+            "name": "tesseract",
+            "version": "5.4.0.20240606"
+          }
+        },
+        "header": {
+          "observation_date": {
+            "name": "observation_date",
+            "value": "2024-07-30",
+            "status": "needs_review",
+            "confidence": 0.89,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "observer": {
+            "name": "observer",
+            "value": "Maria Hernandez",
+            "status": "needs_review",
+            "confidence": 0.895,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "company_observed": {
+            "name": "company_observed",
+            "value": "Queen's Contracting",
+            "status": "needs_review",
+            "confidence": 0.545,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "timesheet_number": {
+            "name": "timesheet_number",
+            "value": "47072",
+            "status": "needs_review",
+            "confidence": 0.6,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "employee_number": {
+            "name": "employee_number",
+            "value": "352957",
+            "status": "needs_review",
+            "confidence": 0.71,
+            "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+            "text_kind": "handwritten",
+            "engine": {
+              "name": "tesseract",
+              "version": "5.4.0.20240606"
+            }
+          },
+          "location": {
+            "key": "location",
+            "options": [
+              {
+                "name": "1000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "2000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "3000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "4000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "8000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "5000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "5900",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "6000",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "7000",
+                "state": "checked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 107,
+                "mark_area_fraction": 0.01564
+              },
+              {
+                "name": "OSLD",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              }
+            ],
+            "required": true,
+            "status": "answered",
+            "selected": "7000",
+            "confidence": null,
+            "review_required": false,
+            "review_reasons": []
+          },
+          "shift": {
+            "key": "shift",
+            "options": [
+              {
+                "name": "Day",
+                "state": "unchecked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 0,
+                "mark_area_fraction": 0.0
+              },
+              {
+                "name": "Night",
+                "state": "checked",
+                "confidence": null,
+                "review_required": false,
+                "review_reason": null,
+                "ink_pixels": 107,
+                "mark_area_fraction": 0.01454
+              }
+            ],
+            "required": true,
+            "status": "answered",
+            "selected": "Night",
+            "confidence": null,
+            "review_required": false,
+            "review_reasons": []
+          }
+        },
+        "checklist": [
+          {
+            "row_number": 1,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_1_question",
+              "value": "Is a Work Authorization Permit and/or Variance in place and at the work front to bypass/defeat a Safety Critical Device?",
+              "status": "extracted",
+              "confidence": 0.9465,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_1",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 112,
+                  "mark_area_fraction": 0.01518
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "S",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 2,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_2_question",
+              "value": "Alternative controls in place to manage risks while Safety Critical Device is defeated?",
+              "status": "extracted",
+              "confidence": 0.9546153846153846,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_2",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 110,
+                  "mark_area_fraction": 0.01421
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "S",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 3,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_3_question",
+              "value": "Is there an emergency response plan during safety critical device defeat?",
+              "status": "extracted",
+              "confidence": 0.9572727272727274,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_3",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 109,
+                  "mark_area_fraction": 0.01509
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 4,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_4_question",
+              "value": "Safety critical device defeat/bypass is documented?",
+              "status": "extracted",
+              "confidence": 0.9433333333333332,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_4",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 111,
+                  "mark_area_fraction": 0.01574
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "N",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 5,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_5_question",
+              "value": "Safety critical device defeat/bypass is communicated?",
+              "status": "extracted",
+              "confidence": 0.9416666666666668,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_5",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 108,
+                  "mark_area_fraction": 0.01411
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "R",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 6,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_6_question",
+              "value": "Have crane computer by-passes/alarms been tampered with or disabled?",
+              "status": "extracted",
+              "confidence": 0.9488888888888889,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_6",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 108,
+                  "mark_area_fraction": 0.01411
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 7,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_7_question",
+              "value": "Tools equipped with built-in safety features? (spring loaded safety knives, deadman switches, etc.) And safety features not bypassed",
+              "status": "extracted",
+              "confidence": 0.9344444444444444,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_7",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 107,
+                  "mark_area_fraction": 0.01399
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "S",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 8,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_8_question",
+              "value": "Are tools with triggers being used properly? The trigger is not locked down",
+              "status": "extracted",
+              "confidence": 0.9553846153846153,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_8",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 106,
+                  "mark_area_fraction": 0.0137
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "S",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "row_number": 9,
+            "printed_row_label": null,
+            "question": {
+              "name": "checklist_row_9_question",
+              "value": "Are tools with guards and handles being used properly",
+              "status": "extracted",
+              "confidence": 0.9277777777777777,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "checklist_row_9",
+              "options": [
+                {
+                  "name": "S",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "R",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "I",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 112,
+                  "mark_area_fraction": 0.01481
+                },
+                {
+                  "name": "N",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "I",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          }
+        ],
+        "expectation_answers": [
+          {
+            "key": "positive_feedback",
+            "question": {
+              "name": "expectation_positive_feedback_question",
+              "value": "Has positive feedback provided?",
+              "status": "extracted",
+              "confidence": 0.95,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_positive_feedback",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "No",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 113,
+                  "mark_area_fraction": 0.01587
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "No",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "job_stopped",
+            "question": {
+              "name": "expectation_job_stopped_question",
+              "value": "Has the Job been stopped in the event of an imminent hazard?",
+              "status": "extracted",
+              "confidence": 0.9325,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_job_stopped",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "No",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 108,
+                  "mark_area_fraction": 0.01379
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "No",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "investigation",
+            "question": {
+              "name": "expectation_investigation_question",
+              "value": "Has an investigation been conducted?",
+              "status": "extracted",
+              "confidence": 0.9420000000000001,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_investigation",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 107,
+                  "mark_area_fraction": 0.01448
+                },
+                {
+                  "name": "No",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "Yes",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          },
+          {
+            "key": "corrective_actions",
+            "question": {
+              "name": "expectation_corrective_actions_question",
+              "value": "Have corrective actions been taken?",
+              "status": "extracted",
+              "confidence": 0.9520000000000001,
+              "review_reason": null,
+              "text_kind": "printed",
+              "engine": {
+                "name": "tesseract",
+                "version": "5.4.0.20240606"
+              }
+            },
+            "answer": {
+              "key": "expectation_corrective_actions",
+              "options": [
+                {
+                  "name": "Yes",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                },
+                {
+                  "name": "No",
+                  "state": "checked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 107,
+                  "mark_area_fraction": 0.01366
+                },
+                {
+                  "name": "N/A",
+                  "state": "unchecked",
+                  "confidence": null,
+                  "review_required": false,
+                  "review_reason": null,
+                  "ink_pixels": 0,
+                  "mark_area_fraction": 0.0
+                }
+              ],
+              "required": true,
+              "status": "answered",
+              "selected": "No",
+              "confidence": null,
+              "review_required": false,
+              "review_reasons": []
+            }
+          }
+        ],
+        "comments": {
+          "name": "comments",
+          "value": "Great teamwork and performance.",
+          "status": "needs_review",
+          "confidence": 0.7875,
+          "review_reason": "handwritten text is an OCR candidate and always needs human confirmation; the engine's confidence is not calibrated and does not prove correctness",
+          "text_kind": "handwritten",
+          "engine": {
+            "name": "tesseract",
+            "version": "5.4.0.20240606"
+          }
+        }
+      },
+      "alignment": {
+        "accepted": true,
+        "method": "sift_affine",
+        "reasons": [],
+        "keypoints_template": 2603,
+        "keypoints_page": 4000,
+        "matches": 250,
+        "inliers": 51,
+        "inlier_ratio": 0.204,
+        "inlier_spread_x": 0.9742,
+        "inlier_spread_y": 0.9158,
+        "median_residual_px": 0.7699,
+        "scale_x": 0.72512,
+        "scale_y": 1.09055,
+        "rotation_degrees": -0.0165,
+        "shear_degrees": 0.0055,
+        "perspective_magnitude": 0.0,
+        "verification_chamfer_mean_px": 0.4324,
+        "verification_within_2px_fraction": 0.9971,
+        "matrix": [
+          [
+            0.725116,
+            0.000209,
+            -0.137152
+          ],
+          [
+            -0.000209,
+            1.090552,
+            0.01871
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "opencv_version": "5.1.0"
+      },
+      "failed_form_evidence": null
+    },
+    {
+      "page_number": 4,
+      "status": "failed_test_form",
+      "quality": {
+        "verdict": "ok",
+        "reasons": [],
+        "metrics": {
+          "mark_ratio": 0.016307219251336897,
+          "ink_ratio": 0.016037967914438504,
+          "content_components": 14,
+          "mean_brightness": 250.8699502673797,
+          "paper_level": 255.0,
+          "contrast": 255.0,
+          "sharpness": 8890.240436527412,
+          "noise_sigma": 0.0,
+          "speckle_ratio": 0.000014705882352941177
+        }
+      },
+      "text_fields": [],
+      "checkboxes": [],
+      "error": null,
+      "review_required": false,
+      "review_reasons": [],
+      "form": null,
+      "alignment": null,
+      "failed_form_evidence": {
+        "source": "text_layer",
+        "matched_text": "FAILED TEST FORM",
+        "words": [
+          {
+            "text": "FAILED",
+            "bbox": [
+              13.081478118896484,
+              575.5899047851562,
+              189.43399047851562,
+              751.9423828125
+            ]
+          },
+          {
+            "text": "TEST",
+            "bbox": [
+              150.57846069335938,
+              475.3928527832031,
+              289.63104248046875,
+              614.4453735351562
+            ]
+          },
+          {
+            "text": "FORM",
+            "bbox": [
+              250.7755126953125,
+              361.4778747558594,
+              403.5459899902344,
+              514.2483520507812
+            ]
+          }
+        ],
+        "direction_degrees": 45.0,
+        "ocr_engine": null,
+        "ocr_confidence": null,
+        "detail": "phrase found in the PDF's own text layer"
+      }
+    }
+  ],
+  "metadata": {
+    "schema_version": "2.0",
+    "pipeline_version": "0.1.0",
+    "source_file": "Sample_input.pdf",
+    "source_sha256": "b4304a9e57677952fef8ecac1e5425dcf5bb74643a8fd0c5331172abb009c860",
+    "template_file": "template.png",
+    "template_sha256": "5d05f5d892f8f37f32d6a4d32977ba9223c62de49bbbe6b7cdebdbf872df4e27",
+    "render_dpi": 200,
+    "engines": {
+      "opencv": "5.1.0",
+      "pymupdf": "1.28.2",
+      "tesseract": "5.4.0.20240606"
+    }
+  }
+}
